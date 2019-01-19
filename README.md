@@ -8,8 +8,6 @@ Flicks is an app that allows users to browse movies from the [The Movie Database
 ## Flicks Part 1
 
 ### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after after checking off completed user stories)
-
 #### REQUIRED (10pts)
 - [x] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
@@ -24,7 +22,9 @@ Flicks is an app that allows users to browse movies from the [The Movie Database
 
 ### App Walkthough GIF
 
-<img src="WalkThrough.gif" width=450>
+### LandScape View
+<img src="WalkThrough.gif" width=450><br>
+### Portrait View
 <img src="WalkThrough1.gif" width=250<br>
 
 ### Notes
