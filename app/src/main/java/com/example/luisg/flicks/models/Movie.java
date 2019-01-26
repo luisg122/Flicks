@@ -3,22 +3,31 @@ package com.example.luisg.flicks.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Movie {
 
     String posterPath;
     String title;
     String overview;
     String backDropPath;
+    double voteAverage;
+    int movieId;
+    //empty constructor need by the Parceler library
+    public Movie() {
+    }
 
     public Movie(JSONObject jsonObject) throws JSONException {  //whoever calls constructor, has responsibility to handle exception
-        posterPath = jsonObject.getString("poster_path");
+        posterPath = jsonObject.getString("poster_path");   //be caustious of spelling key name from api
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
         backDropPath = jsonObject.getString("backdrop_path");
+        voteAverage = jsonObject.getDouble("vote_average");
+        movieId = jsonObject.getInt("id");
 
     }
 
@@ -56,5 +65,21 @@ public class Movie {
 
     /*public void setOverview(String overview) {
         this.overview = overview;
+    }*/
+
+    public double getVoteAverage() {
+        return voteAverage;
+    }
+
+    /*public void setVoteAverage(double voteAverage) {
+        this.voteAverage = voteAverage;
+    }*/
+
+    public int getMovieId() {
+        return movieId;
+    }
+
+   /* public void setMovieId(int movieId) {
+        this.movieId = movieId;
     }*/
 }
